@@ -1,0 +1,16 @@
+﻿
+> jr-smart@0.1.0 lint
+> eslint
+
+
+C:\Users\David Zapata\Desktop\jr-smart\components\Testimonials.tsx
+   5:34  warning  'AvatarImage' is defined but never used                          @typescript-eslint/no-unused-vars
+  76:33  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  76:55  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\David Zapata\Desktop\jr-smart\components\hero\Hero.tsx
+   3:29  warning  'useTransform' is defined but never used      @typescript-eslint/no-unused-vars
+  29:13  warning  'scrollY' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+Ô£û 5 problems (2 errors, 3 warnings)
+
