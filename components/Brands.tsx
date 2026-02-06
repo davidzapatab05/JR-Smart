@@ -53,7 +53,7 @@ const brands = [
 
 export const Brands = () => {
     return (
-        <section id="marcas" className="bg-white dark:bg-[#020617] min-h-[90vh] flex flex-col justify-center">
+        <section id="marcas" className="bg-white dark:bg-[#020617] min-h-[90vh] flex flex-col justify-center scroll-mt-24">
             {/* Brands Section - Static & Centered */}
             <div className="py-20 container px-4 mx-auto flex-grow flex flex-col justify-center">
                 <p className="text-center text-sm font-medium text-slate-400 dark:text-slate-500 mb-12 uppercase tracking-widest">

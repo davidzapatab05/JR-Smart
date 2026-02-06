@@ -57,7 +57,7 @@ export const Specialties = () => {
     ]
 
     return (
-        <section className="min-h-screen flex flex-col justify-center py-32 px-4 bg-white dark:bg-[#020617] relative" id="especialidades">
+        <section className="min-h-screen flex flex-col justify-center py-32 px-4 bg-white dark:bg-[#020617] relative scroll-mt-24" id="especialidades">
             {/* Section Header */}
             <div className="max-w-7xl mx-auto mb-8 flex flex-col md:flex-row items-end justify-between gap-6">
                 <div>

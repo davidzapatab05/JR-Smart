@@ -29,7 +29,7 @@ export const HowItWorks = () => {
     ]
 
     return (
-        <section id="proceso" className="min-h-screen flex flex-col justify-center py-32 px-6 bg-white dark:bg-[#020617] relative overflow-hidden transition-colors duration-300">
+        <section id="proceso" className="min-h-screen flex flex-col justify-center py-32 px-6 bg-white dark:bg-[#020617] relative overflow-hidden transition-colors duration-300 scroll-mt-24">
 
             <div className="max-w-6xl mx-auto text-center relative z-10">
                 <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 tracking-tight">

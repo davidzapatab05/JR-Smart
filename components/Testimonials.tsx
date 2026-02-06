@@ -45,7 +45,7 @@ const testimonials = [
 
 export const Testimonials = () => {
     return (
-        <section id="testimonios" className="min-h-screen flex flex-col justify-center items-center py-32 bg-slate-50 dark:bg-slate-950 overflow-hidden">
+        <section id="testimonios" className="min-h-screen flex flex-col justify-center items-center py-32 bg-slate-50 dark:bg-slate-950 overflow-hidden scroll-mt-24">
             <div className="container px-4 mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
