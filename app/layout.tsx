@@ -62,6 +62,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: "G1oKjRa4UD5EXuvruOJTJxoKUAqhijjc-j8ZJsgTE6s",
+  },
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
