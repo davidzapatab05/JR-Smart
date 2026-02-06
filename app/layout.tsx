@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "JR Smart | Reparación de Celulares en Piura - Servicio Técnico Apple & Android",
-  description: "Servicio técnico líder en Piura. Reparación de iPhone y Android con garantía certificada de 3 meses. Especialistas en Pantallas OLED, baterías y equipos mojados. ¡Diagnóstico express en 45 min!",
+  description: "Servicio técnico líder en Piura. Reparación de iPhone y Android con garantía certificada. Especialistas en Pantallas OLED, baterías y equipos mojados. ¡Diagnóstico express en 45 min!",
   keywords: ["reparación de celulares piura", "servicio técnico iphone piura", "cambio de pantalla celular piura", "reparación de celulares cerca de mi", "bateria iphone piura", "jr smart piura"],
   applicationName: "JR Smart",
   authors: [{ name: "JR Smart" }],

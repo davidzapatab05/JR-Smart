@@ -56,7 +56,12 @@ export const Hero = () => {
                         viewport={{ once: false }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <div className="flex flex-wrap gap-2 mb-6">
+                        <div className="flex flex-wrap gap-2 mb-6 items-center">
+                            <div className="mr-2 px-3 py-1 bg-blue-600/10 dark:bg-blue-400/10 border border-blue-600/20 dark:border-blue-400/20 rounded-lg flex items-center">
+                                <span className="text-blue-600 dark:text-blue-400 font-black tracking-tighter text-sm uppercase">
+                                    {BRAND.name}
+                                </span>
+                            </div>
                             <Badge variant="outline" aria-label="Garantía Certificada" className="border-blue-200 text-blue-700 bg-blue-50/80 dark:bg-blue-950/30 dark:text-blue-300 dark:border-blue-800 px-3 py-1.5 uppercase tracking-wider text-[11px] font-bold shadow-sm backdrop-blur-sm">
                                 <ShieldCheck className="w-3 h-3 mr-1.5" />
                                 Garantía Certificada
@@ -82,7 +87,7 @@ export const Hero = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg font-medium"
                     >
-                        El estándar más alto en servicio técnico para <span className="text-slate-900 dark:text-white font-semibold">Apple</span> y <span className="text-slate-900 dark:text-white font-semibold">Android</span>. Expertos certificados para devolverle la vida a tus dispositivos.
+                        En <span className="font-bold text-slate-900 dark:text-white">JR Smart</span> definimos el estándar más alto en servicio técnico para <span className="text-slate-900 dark:text-white font-semibold">Apple</span> y <span className="text-slate-900 dark:text-white font-semibold">Android</span>. Expertos certificados para devolverle la vida a tus dispositivos.
                     </motion.p>
 
                     <motion.div
@@ -210,7 +215,7 @@ export const Hero = () => {
                         </div>
                         <div>
                             <div className="text-[9px] text-slate-500 dark:text-slate-400 font-bold uppercase">Garantía</div>
-                            <div className="text-xs font-bold text-slate-900 dark:text-white">3 Meses</div>
+                            <div className="text-xs font-bold text-slate-900 dark:text-white">100%</div>
                         </div>
                     </motion.div>
                 </div>

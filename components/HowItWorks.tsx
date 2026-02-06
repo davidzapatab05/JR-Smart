@@ -89,7 +89,7 @@ export const HowItWorks = () => {
                         <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-indigo-500" /> Garantía Escrita
                         </h3>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">Todos nuestros servicios incluyen garantía de 3 meses en mano de obra.</p>
+                        <p className="text-sm text-slate-500 dark:text-slate-400">Todos nuestros servicios incluyen garantía en mano de obra.</p>
                     </div>
                 </motion.div>
             </div>

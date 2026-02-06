@@ -20,9 +20,6 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
         }
     }, [onComplete])
 
-    // Unified deep formal navy background color
-    const BG_COLOR = "#001A4D"
-
     return (
         <div className="fixed inset-0 z-[100] overflow-hidden pointer-events-none bg-transparent">
             {/* Logo Center with Fade-Out */}
@@ -38,7 +35,7 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                     >
                         <div className="relative group">
                             {/* Technical Glow Backdrop */}
-                            <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full scale-150 animate-pulse" />
+                            <div className="absolute inset-0 bg-blue-500/10 dark:bg-primary/20 blur-[100px] rounded-full scale-150 animate-pulse" />
 
                             <MotionImage
                                 src="/jr.png"
@@ -47,7 +44,7 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                                 height={400}
                                 priority
                                 fetchPriority="high"
-                                className="w-64 md:w-96 h-auto relative z-10 drop-shadow-[0_0_50px_rgba(0,51,204,0.5)]"
+                                className="w-64 md:w-96 h-auto relative z-10 drop-shadow-[0_10px_30px_rgba(0,51,204,0.15)] dark:drop-shadow-[0_0_50px_rgba(0,51,204,0.5)]"
                                 initial={{ y: 20 }}
                                 animate={{ y: 0 }}
                                 transition={{ duration: 1, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
@@ -63,12 +60,11 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                 animate={isOpening ? { y: "-100%" } : { y: 0 }}
                 transition={{ duration: 1.2, ease: [0.77, 0, 0.175, 1] }}
                 style={{
-                    backgroundColor: BG_COLOR,
                     zIndex: 10,
                     pointerEvents: "auto",
                     willChange: "transform"
                 }}
-                className="absolute inset-0"
+                className="absolute inset-0 bg-slate-50 dark:bg-[#001A4D]"
             />
 
             {/* Bottom curtain (using translate and a slightly different ease for a layered feel) */}
@@ -77,20 +73,19 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                 animate={isOpening ? { y: "100%" } : { y: 0 }}
                 transition={{ duration: 1.2, ease: [0.77, 0, 0.175, 1] }}
                 style={{
-                    backgroundColor: "#001233", // Slightly darker for depth
                     zIndex: 11,
                     pointerEvents: "auto",
                     willChange: "transform"
                 }}
-                className="absolute inset-x-0 bottom-0 h-1/2"
+                className="absolute inset-x-0 bottom-0 h-1/2 bg-slate-100 dark:bg-[#001233]"
             />
 
             {/* Solid Background Backstop */}
             <motion.div
                 animate={{ opacity: isOpening ? 0 : 1 }}
                 transition={{ duration: 0.4 }}
-                className="absolute inset-0 z-[9]"
-                style={{ backgroundColor: BG_COLOR, willChange: "opacity" }}
+                className="absolute inset-0 z-[9] bg-slate-50 dark:bg-[#001A4D]"
+                style={{ willChange: "opacity" }}
             />
         </div>
     )

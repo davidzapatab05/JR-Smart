@@ -72,6 +72,11 @@ export const Header = () => {
                         priority
                         fetchPriority="high"
                     />
+                    <div className="flex flex-col items-start justify-center ml-2">
+                        <span className="text-xl font-bold tracking-tighter text-slate-800 dark:text-white hidden sm:block md:hidden lg:block leading-none">
+                            {BRAND.name.split(' ')[0]} <span className="text-blue-600 dark:text-blue-400">{BRAND.name.split(' ')[1]}</span>
+                        </span>
+                    </div>
                 </div>
 
                 {/* Desktop Nav */}
