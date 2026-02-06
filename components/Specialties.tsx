@@ -2,57 +2,60 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Smartphone, ShieldCheck, Droplets, Battery, Shield, Clock, Users, Wrench } from "lucide-react"
+import { Smartphone, ShieldCheck, Droplets, Battery, Shield, Clock, Users, Wrench, Monitor, HardDrive, FileText, RefreshCw } from "lucide-react"
 
 export const Specialties = () => {
     const specialties = [
+        // --- SERVICIOS MÓVILES (4 Cards) ---
         {
             icon: Smartphone,
-            title: "Cambio de Pantalla",
-            desc: "Sustitución de módulos LCD/OLED y táctil por roturas o manchas.",
-            features: ["Calibración TrueTone", "Módulos Originales", "Acabado Perfecto"]
+            title: "Pantallas y Visores",
+            desc: "Cambio de cristales rotos y pantallas completas (LCD/OLED).",
+            features: ["Calibración TrueTone", "Acabado Original", "Garantía Escrita"]
         },
         {
             icon: Battery,
-            title: "Reemplazo de Batería",
-            desc: "Sustitución de celdas agotadas para recuperar la autonomía original.",
-            features: ["Salud 100% Garantizada", "Sin Mensajes de Error", "Ciclos Nuevos"]
-        },
-        {
-            icon: Wrench,
-            title: "Hardware Periférico",
-            desc: "Reparación de cámaras, altavoces, auriculares y puertos de carga.",
-            features: ["Diagnóstico de Carga", "Micrófonos Claros", "Lentes de Cámara"]
-        },
-        {
-            icon: Shield,
-            title: "Estructura y Estética",
-            desc: "Renovación de tapas traseras, chasis y botones físicos.",
-            features: ["Acabados Fabriles", "Botones Clicky", "Ajuste de Chasis"]
+            title: "Batería y Energía",
+            desc: "Reemplazo de baterías y reparación de puertos de carga.",
+            features: ["Ciclos Nuevos", "Sin Mensajes de Error", "Carga Rápida Activa"]
         },
         {
             icon: ShieldCheck,
-            title: "Software y Sistemas",
-            desc: "Solución a bootloops, errores críticos y actualizaciones.",
-            features: ["Flasheo de Sistema", "Eliminación de Virus", "Updates Oficiales"]
+            title: "Placa y Circuitos",
+            desc: "Microsoldadura, equipos mojados y fallas de encendido.",
+            features: ["Rescate de Datos", "Limpieza Ultrasónica", "Schematics Oficiales"]
         },
         {
             icon: Users,
-            title: "Desbloqueos y Red",
-            desc: "Liberación de operadoras y remoción de bloqueos de seguridad.",
-            features: ["Liberación por IMEI", "Cuenta Google (FRP)", "Código y Patrón"]
+            title: "Software y Señal",
+            desc: "Desbloqueos de red, cuentas Google/iCloud y flasheo.",
+            features: ["Liberación Permanente", "Señal Estable", "Actualizaciones Seguras"]
+        },
+
+        // --- SERVICIOS PC/LAPTOP (4 Cards) ---
+        {
+            icon: HardDrive,
+            title: "Repotenciación PC",
+            desc: "Discos Sólidos (SSD/NVMe) y aumento de memoria RAM.",
+            features: ["Inicio en Segundos", "Multitarea Fluida", "Marcas Premium"]
         },
         {
-            icon: Clock,
-            title: "Mantenimiento Preventivo",
-            desc: "Limpieza profunda de rejillas, micrófonos y puertos de carga.",
-            features: ["Optimización de Carga", "Audio Cristalino", "Vida Útil Extendida"]
+            icon: RefreshCw,
+            title: "Formateo y Sistema",
+            desc: "Instalación limpia de Windows 10/11 con drivers originales.",
+            features: ["Sin Bloatware", "Optimización Gamer", "Respaldo de Archivos"]
         },
         {
-            icon: Droplets,
-            title: "Rescate de Equipos",
-            desc: "Baño químico por ultrasonido para dispositivos mojados.",
-            features: ["Limpieza Ultrasónica", "Recuperación de Placa", "Corte de Corrosión"]
+            icon: Shield, // Using Shield for security/os upgrade
+            title: "Actualización a Win 11",
+            desc: "Pasamos tu equipo de Windows 10 a 11 (si es compatible).",
+            features: ["Verificación TPM", "Licencia Digital", "Sin Pérdida de Datos"]
+        },
+        {
+            icon: FileText,
+            title: "Office y Licencias",
+            desc: "Activación de Windows y Paquete Office permanente.",
+            features: ["Licencias Digitales", "Word/Excel/PowerPoint", "Soporte Remoto"]
         }
     ]
 

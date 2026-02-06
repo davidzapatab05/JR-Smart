@@ -49,6 +49,12 @@ const brands = [
     { name: "Motorola", logo: "/brands/motorola.svg" },
     { name: "Huawei", logo: "/brands/huawei.svg" },
     { name: "Honor", logo: "/brands/honor.svg" },
+    { name: "Microsoft", logo: "/brands/microsoft.svg" },
+    { name: "HP", logo: "/brands/hp.svg" },
+    { name: "Dell", logo: "/brands/dell.svg" },
+    { name: "Lenovo", logo: "/brands/lenovo.svg" },
+    { name: "Asus", logo: "/brands/asus.svg" },
+    { name: "Acer", logo: "/brands/acer.svg" },
 ]
 
 export const Brands = () => {

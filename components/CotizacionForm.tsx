@@ -175,7 +175,7 @@ export const CotizacionForm = () => {
                                                                 <Smartphone className="h-5 w-5 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
                                                             </div>
                                                             <Input
-                                                                placeholder="Modelo del equipo (ej. iPhone 13)"
+                                                                placeholder="Modelo del equipo (ej. iPhone 13, Laptop HP, etc.)"
                                                                 {...field}
                                                                 className="pl-11 h-14 bg-slate-50/50 dark:bg-slate-950/50 border-slate-200 dark:border-slate-800 focus:border-blue-500 dark:focus:border-blue-500 text-slate-900 dark:text-white rounded-xl transition-all shadow-sm focus:ring-4 focus:ring-blue-500/10 placeholder:text-slate-400"
                                                             />

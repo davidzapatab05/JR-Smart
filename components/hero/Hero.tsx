@@ -87,7 +87,7 @@ export const Hero = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg font-medium"
                     >
-                        En <span className="font-bold text-slate-900 dark:text-white">JR Smart</span> definimos el estándar más alto en servicio técnico para <span className="text-slate-900 dark:text-white font-semibold">Apple</span> y <span className="text-slate-900 dark:text-white font-semibold">Android</span>. Expertos certificados para devolverle la vida a tus dispositivos.
+                        En <span className="font-bold text-slate-900 dark:text-white">JR Smart</span> definimos el estándar más alto en servicio técnico para <span className="text-slate-900 dark:text-white font-semibold">Apple</span>, <span className="text-slate-900 dark:text-white font-semibold">Android</span> y <span className="text-slate-900 dark:text-white font-semibold">Laptops</span>. Expertos certificados para devolverle la vida a tus dispositivos.
                     </motion.p>
 
                     <motion.div

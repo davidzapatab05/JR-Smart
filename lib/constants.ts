@@ -71,6 +71,30 @@ export const SERVICES = [
         icon: "droplet",
         whatsappMessage: "Hola, mi equipo se mojó/necesita mantenimiento general."
     },
+    {
+        id: "repotenciacion",
+        title: "Repotenciación PC/Laptop",
+        problem: "¿Lento o con poco espacio?",
+        solution: "Instalación de discos sólidos (SSD) y aumento de memoria RAM.",
+        icon: "hard-drive",
+        whatsappMessage: "Hola, quiero cotizar una repotenciación para mi computadora/laptop."
+    },
+    {
+        id: "software-pc",
+        title: "Licencias y Office",
+        problem: "¿Windows expirado o necesitas Office?",
+        solution: "Instalación y activación de Windows y Paquete Office completo.",
+        icon: "file-text",
+        whatsappMessage: "Hola, necesito información sobre licencias de Windows/Office."
+    },
+    {
+        id: "formateo",
+        title: "Formateo y Sistema",
+        problem: "¿Virus, lentitud o actualización?",
+        solution: "Formateo completo, respaldo y actualización a Windows 11.",
+        icon: "monitor",
+        whatsappMessage: "Hola, necesito formatear o actualizar mi computadora."
+    },
 ];
 
 export const REPAIR_PROCESS = [

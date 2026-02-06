@@ -19,8 +19,8 @@ const testimonials = [
     },
     {
         name: "Ana Torres",
-        role: "Cliente - MacBook Air",
-        content: "Llevé mi laptop a otros lugares y no daban con la falla. En JR Smart detectaron el problema de micro-soldadura al instante.",
+        role: "Cliente - Laptop HP",
+        content: "Mi laptop estaba muy lenta. Le instalaron un disco sólido y aumentaron la RAM, ¡ahora vuela! Me ahorré comprar una nueva.",
         rating: 5
     },
     {
