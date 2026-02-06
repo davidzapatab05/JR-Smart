@@ -9,7 +9,7 @@ export function StructuredData() {
                 "@id": "https://jr-smart.com/#business",
                 "name": "JR Smart",
                 "image": "https://jr-smart.com/jr.png",
-                "description": "Servicio técnico especializado en reparación de celulares en Piura. Pantallas OLED, baterías, sistema y rescate de equipos mojados.",
+                "description": "Servicio técnico especializado en reparación de celulares y laptops en Piura. Pantallas, baterías, repotenciación de PC y licencias.",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Piura",
@@ -48,7 +48,7 @@ export function StructuredData() {
             {
                 "@type": "Service",
                 "@id": "https://jr-smart.com/#service",
-                "serviceType": "Reparación de Celulares",
+                "serviceType": "Reparación de Celulares y Computadoras",
                 "provider": {
                     "@id": "https://jr-smart.com/#business"
                 },
@@ -86,6 +86,20 @@ export function StructuredData() {
                             "itemOffered": {
                                 "@type": "Service",
                                 "name": "Rescate de Equipos Mojados"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Repotenciación de Laptops (SSD/RAM)"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Formateo y Windows 11"
                             }
                         }
                     ]

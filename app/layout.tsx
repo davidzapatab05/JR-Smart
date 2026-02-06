@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JR Smart | Reparación de Celulares en Piura - Servicio Técnico Apple & Android",
-  description: "Servicio técnico líder en Piura. Reparación de iPhone y Android con garantía certificada. Especialistas en Pantallas OLED, baterías y equipos mojados. ¡Diagnóstico express en 45 min!",
-  keywords: ["reparación de celulares piura", "servicio técnico iphone piura", "cambio de pantalla celular piura", "reparación de celulares cerca de mi", "bateria iphone piura", "jr smart piura"],
+  title: "JR Smart | Reparación de Celulares y Laptops en Piura - Servicio Técnico Apple, Android & PC",
+  description: "Servicio técnico líder en Piura. Reparación de iPhone, Android y Laptops. Especialistas en Pantallas, Baterías, Repotenciación de PC, SSD y Licencias. ¡Diagnóstico express en 45 min!",
+  keywords: ["reparación de celulares piura", "servicio técnico iphone piura", "cambio de pantalla celular piura", "reparación de celulares cerca de mi", "bateria iphone piura", "jr smart piura", "reparación de laptops piura", "formateo de computadoras piura", "repotenciación de pc piura", "instalación de windows piura", "ssd y ram piura"],
   applicationName: "JR Smart",
   authors: [{ name: "JR Smart" }],
   creator: "JR Smart",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "JR Smart - Reparación Profesional de Celulares en Piura",
-    description: "Servicio técnico especializado con garantía certificada. Pantallas, baterías, sistema y más. Diagnóstico express en 45 minutos.",
+    title: "JR Smart - Reparación de Celulares y Laptops en Piura",
+    description: "Servicio técnico especializado con garantía certificada. Pantallas, baterías, repotenciación de laptops y licencias. Diagnóstico express.",
     url: 'https://jr-smart.com',
     siteName: 'JR Smart',
     locale: 'es_PE',
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
         url: '/og-image.webp',
         width: 1200,
         height: 630,
-        alt: 'JR Smart - Servicio Técnico de Celulares',
+        alt: 'JR Smart - Servicio Técnico de Celulares y Laptops',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'JR Smart - Reparación de Celulares en Piura',
-    description: 'Servicio técnico profesional con garantía certificada. Diagnóstico express en 45 minutos.',
+    title: 'JR Smart - Reparación de Celulares y Laptops en Piura',
+    description: 'Servicio técnico profesional. Celulares, Laptops, Repotenciación y Software. Diagnóstico express.',
     images: ['/og-image.webp'],
   },
   robots: {
