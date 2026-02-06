@@ -69,7 +69,7 @@ export const CotizacionForm = () => {
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-slate-900 dark:text-white">Horario</h4>
+                                    <h3 className="font-bold text-slate-900 dark:text-white">Horario</h3>
                                     <p className="text-slate-600 dark:text-slate-400 text-sm">Lun - Sáb: 9:00 AM - 8:00 PM</p>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ export const CotizacionForm = () => {
                                     <Phone className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-slate-900 dark:text-white">Contacto</h4>
+                                    <h3 className="font-bold text-slate-900 dark:text-white">Contacto</h3>
                                     <p className="text-slate-600 dark:text-slate-400 text-sm">+51 901 840 323</p>
                                 </div>
                             </div>

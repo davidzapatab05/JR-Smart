@@ -60,6 +60,8 @@ export const Header = () => {
                 <div
                     className="flex items-center gap-2 cursor-pointer active:scale-95 transition-transform"
                     onClick={() => handleScrollTo("top")}
+                    role="button"
+                    aria-label="Ir al inicio"
                 >
                     <Image
                         src="/jr.png"

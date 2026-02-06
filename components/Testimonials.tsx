@@ -79,7 +79,7 @@ export const Testimonials = () => {
                                     <AvatarFallback className="bg-blue-100 text-blue-700 font-bold">{testimonial.name[0]}</AvatarFallback>
                                 </Avatar>
                                 <div>
-                                    <h4 className="font-bold text-slate-900 dark:text-white">{testimonial.name}</h4>
+                                    <h3 className="font-bold text-slate-900 dark:text-white">{testimonial.name}</h3>
                                     <p className="text-xs text-slate-500 dark:text-slate-400">{testimonial.role}</p>
                                 </div>
                             </div>

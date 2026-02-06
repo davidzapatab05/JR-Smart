@@ -47,11 +47,11 @@ export const Hero = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <div className="flex flex-wrap gap-2 mb-6">
-                            <Badge variant="outline" className="border-blue-200 text-blue-700 bg-blue-50/80 dark:bg-blue-950/30 dark:text-blue-300 dark:border-blue-800 px-3 py-1.5 uppercase tracking-wider text-[11px] font-bold shadow-sm backdrop-blur-sm">
+                            <Badge variant="outline" aria-label="Garantía Certificada" className="border-blue-200 text-blue-700 bg-blue-50/80 dark:bg-blue-950/30 dark:text-blue-300 dark:border-blue-800 px-3 py-1.5 uppercase tracking-wider text-[11px] font-bold shadow-sm backdrop-blur-sm">
                                 <ShieldCheck className="w-3 h-3 mr-1.5" />
                                 Garantía Certificada
                             </Badge>
-                            <Badge variant="outline" className="border-indigo-200 text-indigo-700 bg-indigo-50/80 dark:bg-indigo-950/30 dark:text-indigo-300 dark:border-indigo-800 px-3 py-1.5 uppercase tracking-wider text-[11px] font-bold shadow-sm backdrop-blur-sm">
+                            <Badge variant="outline" aria-label="Diagnóstico Express" className="border-indigo-200 text-indigo-700 bg-indigo-50/80 dark:bg-indigo-950/30 dark:text-indigo-300 dark:border-indigo-800 px-3 py-1.5 uppercase tracking-wider text-[11px] font-bold shadow-sm backdrop-blur-sm">
                                 <Zap className="w-3 h-3 mr-1.5" />
                                 Diagnóstico Express
                             </Badge>
@@ -87,7 +87,12 @@ export const Hero = () => {
                             asChild
                             className="h-14 px-8 text-base font-bold bg-blue-600 hover:bg-blue-500 dark:bg-blue-600 dark:hover:bg-blue-500 text-white rounded-full shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 transition-all duration-300 group"
                         >
-                            <a href={`${BRAND.whatsapp}?text=${encodeURIComponent(BRAND.whatsappMessage)}`} target="_blank" rel="noopener noreferrer">
+                            <a
+                                href={`${BRAND.whatsapp}?text=${encodeURIComponent(BRAND.whatsappMessage)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Contactar por WhatsApp para cotización"
+                            >
                                 <MessageCircle className="mr-2 w-5 h-5 group-hover:animate-bounce" />
                                 COTIZAR AHORA
                             </a>

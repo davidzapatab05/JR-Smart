@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JR Smart - Servicio Técnico Profesional de Celulares
 
-## Getting Started
+Este proyecto es la presencia web oficial de **JR Smart**, un servicio técnico líder en Piura especializado en la reparación de dispositivos móviles Apple y Android.
 
-First, run the development server:
+## Características Principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Optimización de Rendimiento**: Puntuaciones máximas en Lighthouse, optimización de imágenes (WebP) y carga prioritaria de LCP.
+- **Accesibilidad Total**: Cumplimiento con estándares ARIA y semántica HTML para lectores de pantalla.
+- **Integración con WhatsApp**: Comunicación directa y rápida con técnicos especializados.
+- **Diseño Responsive & Moderno**: Desarrollado con Next.js, Framer Motion y Tailwind CSS para una experiencia premium en todos los dispositivos.
+- **PWA Ready**: Registro de Service Workers para una mejor experiencia offline y carga progresiva.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: [Next.js](https://nextjs.org/) (App Router), React, TypeScript.
+- **Estilos**: Tailwind CSS, Shadcn/ui.
+- **Animaciones**: Framer Motion.
+- **Iconos**: Lucide React.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Inicio Rápido
 
-## Learn More
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Abrir [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Despliegue en Vercel
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está optimizado para desplegarse en la plataforma [Vercel](https://vercel.com).

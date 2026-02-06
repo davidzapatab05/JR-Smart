@@ -1,7 +1,10 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
+
+const MotionImage = motion(Image)
 
 export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) => {
     const [isOpening, setIsOpening] = useState(false)
@@ -35,9 +38,12 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                             {/* Technical Glow Backdrop */}
                             <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full scale-150 animate-pulse" />
 
-                            <motion.img
+                            <MotionImage
                                 src="/jr.png"
                                 alt="JR Smart Logo"
+                                width={400}
+                                height={400}
+                                priority
                                 className="w-64 md:w-96 h-auto relative z-10 drop-shadow-[0_0_50px_rgba(0,51,204,0.5)]"
                                 initial={{ y: 20 }}
                                 animate={{ y: 0 }}

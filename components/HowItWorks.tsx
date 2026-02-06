@@ -74,21 +74,21 @@ export const HowItWorks = () => {
                     className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left bg-slate-50 dark:bg-slate-900/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-800"
                 >
                     <div className="space-y-2">
-                        <h4 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-green-500" /> Sin Pérdida de Datos
-                        </h4>
+                        </h3>
                         <p className="text-sm text-slate-500 dark:text-slate-400">Tus fotos y archivos están seguros. No borramos nada sin tu autorización.</p>
                     </div>
                     <div className="space-y-2">
-                        <h4 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-blue-500" /> Repuestos Originales
-                        </h4>
+                        </h3>
                         <p className="text-sm text-slate-500 dark:text-slate-400">Usamos componentes genuinos para garantizar el rendimiento de fábrica.</p>
                     </div>
                     <div className="space-y-2">
-                        <h4 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <h3 className="font-bold text-slate-900 dark:text-white flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-indigo-500" /> Garantía Escrita
-                        </h4>
+                        </h3>
                         <p className="text-sm text-slate-500 dark:text-slate-400">Todos nuestros servicios incluyen garantía de 3 meses en mano de obra.</p>
                     </div>
                 </motion.div>
