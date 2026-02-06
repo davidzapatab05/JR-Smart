@@ -48,7 +48,7 @@ export const HowItWorks = () => {
                             key={i}
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                             transition={{ delay: i * 0.2, type: "spring" }}
                             className="flex flex-col items-center group"
                         >
@@ -69,7 +69,7 @@ export const HowItWorks = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     transition={{ delay: 0.5 }}
                     className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left bg-slate-50 dark:bg-slate-900/50 p-8 rounded-3xl border border-slate-100 dark:border-slate-800"
                 >

@@ -52,7 +52,7 @@ export const Header = () => {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 py-4 ${isScrolled || mobileMenuOpen ? "bg-white/95 dark:bg-slate-950/95 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800" : "bg-transparent"
+            className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 py-4 ${isScrolled || mobileMenuOpen ? "bg-white dark:bg-slate-950 md:backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800" : "bg-transparent"
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between relative z-[110]">
@@ -70,6 +70,7 @@ export const Header = () => {
                         height={40}
                         className="h-10 w-auto object-contain"
                         priority
+                        fetchPriority="high"
                     />
                 </div>
 

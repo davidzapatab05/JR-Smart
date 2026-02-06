@@ -7,9 +7,8 @@ import { SplashWrapper } from "@/components/SplashWrapper"
 import { ScrollToTop } from "@/components/ScrollToTop"
 
 // Lazy load below-the-fold components for better performance
-// Components - Static Import for Core Sections
-import { Brands } from "@/components/Brands"
-import { Testimonials } from "@/components/Testimonials"
+const Brands = lazy(() => import("@/components/Brands").then(m => ({ default: m.Brands })))
+const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })))
 
 // Lazy load heavy interactive components
 const Specialties = lazy(() => import("@/components/Specialties").then(m => ({ default: m.Specialties })))
@@ -34,9 +33,9 @@ export default function Home() {
         <main className="flex flex-col relative w-full overflow-x-hidden">
           <Hero />
 
-          <Brands />
-
-
+          <Suspense fallback={<LoadingSection />}>
+            <Brands />
+          </Suspense>
 
           <Suspense fallback={<LoadingSection />}>
             <Specialties />
@@ -46,7 +45,9 @@ export default function Home() {
             <HowItWorks />
           </Suspense>
 
-          <Testimonials />
+          <Suspense fallback={<LoadingSection />}>
+            <Testimonials />
+          </Suspense>
 
           <Suspense fallback={<LoadingSection />}>
             <CotizacionForm />

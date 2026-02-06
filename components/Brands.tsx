@@ -11,7 +11,7 @@ const stats = [
 
 function Counter({ value, suffix }: { value: number, suffix: string }) {
     const ref = useRef<HTMLSpanElement>(null)
-    const inView = useInView(ref, { once: false, margin: "-50px" })
+    const inView = useInView(ref, { once: true, margin: "-50px" })
     const motionValue = useMotionValue(0)
     const springValue = useSpring(motionValue, { damping: 50, stiffness: 100 })
 
@@ -96,7 +96,7 @@ export const Brands = () => {
                             key={index}
                             initial={{ opacity: 0, scale: 0.5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                             transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
                             className="p-2"
                         >

@@ -7,13 +7,16 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   experimental: {
-    optimizeCss: true, // Enable CSS optimization
+    optimizeCss: true,
     scrollRestoration: true,
+    // Modern optimization for large icon libraries
+    optimizePackageImports: ["lucide-react", "framer-motion"],
   },
-  // Ensure we target modern browsers to reduce polyfills
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
-  }
+  },
+  // Ensure we don't output unnecessary headers
+  poweredByHeader: false,
 };
 
 export default nextConfig;

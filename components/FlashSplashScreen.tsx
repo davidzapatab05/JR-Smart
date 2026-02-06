@@ -10,8 +10,9 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
     const [isOpening, setIsOpening] = useState(false)
 
     useEffect(() => {
-        const timer1 = setTimeout(() => setIsOpening(true), 1200)
-        const timer2 = setTimeout(() => onComplete(), 2500)
+        // Significantly reduced timers for better performance metrics
+        const timer1 = setTimeout(() => setIsOpening(true), 600)
+        const timer2 = setTimeout(() => onComplete(), 1500)
 
         return () => {
             clearTimeout(timer1)
@@ -28,10 +29,11 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
             <AnimatePresence>
                 {!isOpening && (
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        exit={{ opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        style={{ willChange: "transform, opacity" }}
                         className="absolute inset-0 z-[20] flex items-center justify-center p-8"
                     >
                         <div className="relative group">
@@ -44,6 +46,7 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                                 width={400}
                                 height={400}
                                 priority
+                                fetchPriority="high"
                                 className="w-64 md:w-96 h-auto relative z-10 drop-shadow-[0_0_50px_rgba(0,51,204,0.5)]"
                                 initial={{ y: 20 }}
                                 animate={{ y: 0 }}
@@ -54,46 +57,40 @@ export const FlashSplashScreen = ({ onComplete }: { onComplete: () => void }) =>
                 )}
             </AnimatePresence>
 
-            {/* Top-Left Curtain */}
+            {/* Top curtain */}
             <motion.div
-                initial={{ x: 0, y: 0 }}
-                animate={isOpening ? {
-                    x: "-100%",
-                    y: "-100%",
-                } : { x: 0, y: 0 }}
-                transition={{ duration: 1.5, ease: [0.77, 0, 0.175, 1] }}
+                initial={{ y: 0 }}
+                animate={isOpening ? { y: "-100%" } : { y: 0 }}
+                transition={{ duration: 1.2, ease: [0.77, 0, 0.175, 1] }}
                 style={{
                     backgroundColor: BG_COLOR,
-                    clipPath: "polygon(-1% -1%, 101% -1%, -1% 101%)",
                     zIndex: 10,
-                    pointerEvents: "auto"
+                    pointerEvents: "auto",
+                    willChange: "transform"
                 }}
                 className="absolute inset-0"
             />
 
-            {/* Bottom-Right Curtain */}
+            {/* Bottom curtain (using translate and a slightly different ease for a layered feel) */}
             <motion.div
-                initial={{ x: 0, y: 0 }}
-                animate={isOpening ? {
-                    x: "100%",
-                    y: "100%",
-                } : { x: 0, y: 0 }}
-                transition={{ duration: 1.5, ease: [0.77, 0, 0.175, 1] }}
+                initial={{ y: 0 }}
+                animate={isOpening ? { y: "100%" } : { y: 0 }}
+                transition={{ duration: 1.2, ease: [0.77, 0, 0.175, 1] }}
                 style={{
-                    backgroundColor: BG_COLOR,
-                    clipPath: "polygon(101% -1%, 101% 101%, -1% 101%)",
-                    zIndex: 10,
-                    pointerEvents: "auto"
+                    backgroundColor: "#001233", // Slightly darker for depth
+                    zIndex: 11,
+                    pointerEvents: "auto",
+                    willChange: "transform"
                 }}
-                className="absolute inset-0"
+                className="absolute inset-x-0 bottom-0 h-1/2"
             />
 
             {/* Solid Background Backstop */}
             <motion.div
                 animate={{ opacity: isOpening ? 0 : 1 }}
-                transition={{ duration: 0.1 }}
+                transition={{ duration: 0.4 }}
                 className="absolute inset-0 z-[9]"
-                style={{ backgroundColor: BG_COLOR }}
+                style={{ backgroundColor: BG_COLOR, willChange: "opacity" }}
             />
         </div>
     )

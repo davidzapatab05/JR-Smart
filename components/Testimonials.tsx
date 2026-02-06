@@ -50,7 +50,7 @@ export const Testimonials = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     className="text-center max-w-2xl mx-auto mb-16"
                 >
                     <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Lo que dicen nuestros clientes</h2>
@@ -68,7 +68,7 @@ export const Testimonials = () => {
                             key={i}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
                             className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-800 relative group hover:-translate-y-1 transition-transform duration-300"
                         >

@@ -31,9 +31,19 @@ export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 pb-0 overflow-hidden bg-slate-50 dark:bg-[#020617] transition-colors duration-500">
             {/* Cinematic Background - Abstract Glass */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[700px] h-[700px] bg-blue-500/10 dark:bg-blue-600/10 rounded-full blur-[120px] animate-pulse duration-[8000ms]" />
-                <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-indigo-500/10 dark:bg-indigo-600/10 rounded-full blur-[120px] animate-pulse duration-[10000ms]" />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none hidden lg:block">
+                <motion.div
+                    animate={{ opacity: [0.05, 0.1, 0.05] }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ willChange: "opacity" }}
+                    className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-500 rounded-full blur-[60px]"
+                />
+                <motion.div
+                    animate={{ opacity: [0.05, 0.1, 0.05] }}
+                    transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ willChange: "opacity" }}
+                    className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-indigo-500 rounded-full blur-[60px]"
+                />
             </div>
 
             <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10 h-full">
