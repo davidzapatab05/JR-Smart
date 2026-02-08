@@ -1,4 +1,6 @@
-# JR Smart - Servicio Técnico Profesional de Celulares
+# JR Smart
+<!-- Redeploying stable version 7bc0e78 -->
+ - Servicio Técnico Profesional de Celulares
 
 Este proyecto es la presencia web oficial de **JR Smart**, un servicio técnico líder en Piura especializado en la reparación de dispositivos móviles Apple y Android.
 
