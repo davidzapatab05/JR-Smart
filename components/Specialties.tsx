@@ -2,7 +2,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Smartphone, ShieldCheck, Droplets, Battery, Shield, Clock, Users, Wrench, Monitor, HardDrive, FileText, RefreshCw } from "lucide-react"
+import { Smartphone, ShieldCheck, Battery, Users, HardDrive, Globe, Code, Monitor } from "lucide-react"
 
 export const Specialties = () => {
     const specialties = [
@@ -32,7 +32,7 @@ export const Specialties = () => {
             features: ["Liberación Permanente", "Señal Estable", "Actualizaciones Seguras"]
         },
 
-        // --- SERVICIOS PC/LAPTOP (4 Cards) ---
+        // --- SERVICIOS PC (2 Cards) ---
         {
             icon: HardDrive,
             title: "Repotenciación PC",
@@ -40,22 +40,24 @@ export const Specialties = () => {
             features: ["Inicio en Segundos", "Multitarea Fluida", "Marcas Premium"]
         },
         {
-            icon: RefreshCw,
-            title: "Formateo y Sistema",
-            desc: "Instalación limpia de Windows 10/11 con drivers originales.",
-            features: ["Sin Bloatware", "Optimización Gamer", "Respaldo de Archivos"]
+            icon: Monitor,
+            title: "Soporte Software PC",
+            desc: "Formateo, instalación de Windows 11, Office y Antivirus.",
+            features: ["Sistema Optimizado", "Licencias Activas", "Respaldo de Datos"]
+        },
+
+        // --- SERVICIOS DESARROLLO (2 Cards) ---
+        {
+            icon: Globe,
+            title: "Diseño Web y Landings",
+            desc: "Páginas web modernas, rápidas y optimizadas para ventas.",
+            features: ["Diseño Premium", "Optimización SEO", "Adaptable a Móviles"]
         },
         {
-            icon: Shield, // Using Shield for security/os upgrade
-            title: "Actualización a Win 11",
-            desc: "Pasamos tu equipo de Windows 10 a 11 (si es compatible).",
-            features: ["Verificación TPM", "Licencia Digital", "Sin Pérdida de Datos"]
-        },
-        {
-            icon: FileText,
-            title: "Office y Licencias",
-            desc: "Activación de Windows y Paquete Office permanente.",
-            features: ["Licencias Digitales", "Word/Excel/PowerPoint", "Soporte Remoto"]
+            icon: Code,
+            title: "Desarrollo de Software",
+            desc: "Sistemas a medida para gestión de inventarios y ventas.",
+            features: ["Software a Medida", "Control Total", "Escalable y Seguro"]
         }
     ]
 
