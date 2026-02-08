@@ -57,8 +57,8 @@ export const Hero = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <div className="flex flex-wrap gap-2 mb-6 items-center">
-                            <div className="mr-2 px-3 py-1 bg-blue-600/10 dark:bg-blue-400/10 border border-blue-600/20 dark:border-blue-400/20 rounded-lg flex items-center">
-                                <span className="text-blue-600 dark:text-blue-400 font-black tracking-tighter text-sm uppercase">
+                            <div className="mr-2 px-3 py-1 bg-blue-600/10 dark:bg-blue-300/10 border border-blue-700/30 dark:border-blue-300/30 rounded-lg flex items-center">
+                                <span className="text-blue-700 dark:text-blue-300 font-black tracking-tighter text-sm uppercase">
                                     {BRAND.name}
                                 </span>
                             </div>
@@ -211,10 +211,10 @@ export const Hero = () => {
                         className="absolute top-[20%] right-0 w-[160px] bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/50 dark:border-slate-700 p-3 z-30 flex items-center gap-3 animate-float"
                     >
                         <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                            <Award className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+                            <Award className="w-4 h-4 text-blue-700 dark:text-blue-300" />
                         </div>
                         <div>
-                            <div className="text-[9px] text-slate-500 dark:text-slate-400 font-bold uppercase">Garantía</div>
+                            <div className="text-[9px] text-slate-600 dark:text-slate-300 font-bold uppercase">Garantía</div>
                             <div className="text-xs font-bold text-slate-900 dark:text-white">100%</div>
                         </div>
                     </motion.div>

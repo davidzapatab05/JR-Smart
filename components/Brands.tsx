@@ -62,7 +62,7 @@ export const Brands = () => {
         <section id="marcas" className="bg-white dark:bg-[#020617] min-h-[90vh] flex flex-col justify-center scroll-mt-24">
             {/* Brands Section - Static & Centered */}
             <div className="py-20 container px-4 mx-auto flex-grow flex flex-col justify-center">
-                <p className="text-center text-sm font-medium text-slate-400 dark:text-slate-500 mb-12 uppercase tracking-widest">
+                <p className="text-center text-sm font-medium text-slate-600 dark:text-slate-400 mb-12 uppercase tracking-widest">
                     Expertos en las principales marcas
                 </p>
 
@@ -106,10 +106,10 @@ export const Brands = () => {
                             transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
                             className="p-2"
                         >
-                            <div className="text-4xl md:text-5xl font-extrabold text-blue-600 dark:text-blue-400 mb-2 tracking-tight">
+                            <div className="text-4xl md:text-5xl font-extrabold text-blue-700 dark:text-blue-300 mb-2 tracking-tight">
                                 <Counter value={stat.value} suffix={stat.suffix} />
                             </div>
-                            <div className="text-slate-600 dark:text-slate-400 text-sm md:text-base font-medium uppercase tracking-wide">
+                            <div className="text-slate-700 dark:text-slate-300 text-sm md:text-base font-medium uppercase tracking-wide">
                                 {stat.label}
                             </div>
                         </motion.div>
